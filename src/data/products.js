@@ -1,5 +1,7 @@
 // Data for PETPOP Pet Wellness Brand
 
+import skinCoatImg from '/product (1).jpeg';
+import dentalImg from '/product (2).jpeg';
 export const BRAND_COLORS = {
   primaryGreen: '#4ade80', // Vibrant PETPOP green
   darkGreen: '#15803d',
@@ -11,17 +13,20 @@ export const BRAND_COLORS = {
 
 export const PRODUCTS = [
   {
-    id: 'skin-coat-support',
+    id: 'skin-and-coat',
     name: 'PETPOP Skin & Coat Support Powder',
-    category: 'Dogs & Cats',
+    subtitle: 'Easy-Mix Supplement for Healthy Skin & Shiny Coat',
+    description: 'PETPOP Skin & Coat Support Powder for Dogs & Cats, 6.36 oz, Chicken Flavor, Omega 3, 6 & 9 with Biotin & Vitamin C, Easy Mix Supplement for Healthy Skin & Shiny Coat.',
+    shortDesc: 'An easy-mix daily supplement designed to support healthy skin and a shiny coat for dogs and cats.',
+    price: '$29.99',
+    rawPrice: 29.99,
     size: '6.36 oz (180g)',
     flavor: 'Chicken Flavor',
-    price: '$28.99',
-    numericPrice: 28.99,
-    rating: 4.9,
-    reviewsCount: 328,
-    image: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=800',
-    description: 'Enriched with Omega 3, 6 & 9, Biotin, and Vitamin C in a delicious easy-mix chicken formula that nourishes sensitive skin and promotes a thick, lustrous coat.',
+    suitableFor: 'Dogs & Cats',
+    rating: '4.9',
+    reviewCount: '128',
+    image: skinCoatImg,
+    badge: 'Best Seller',
     highlights: [
       'For Dogs & Cats',
       'Chicken Flavor',
@@ -31,26 +36,28 @@ export const PRODUCTS = [
       'Skin & Coat Support'
     ],
     features: [
-      'Nourishes dry, sensitive skin from within',
-      'Supports a thick, vibrant & lustrous coat',
-      'Rich in Essential Omega 3, 6 & 9 fatty acids',
-      'Delicious natural chicken flavor pets crave daily'
+      'Nourishes dry skin and reduces seasonal itching',
+      'Promotes a soft, lustrous and glossy fur coat',
+      'Easily mixes with wet or dry daily meals',
+      'Delightful natural chicken flavor pets love'
     ],
-    usageDirections: 'Please follow the serving instructions provided on the product packaging.',
-    badge: 'Best Seller'
+    usageNote: 'Please follow the serving instructions provided on the product packaging.'
   },
   {
-    id: 'dog-dental-powder',
+    id: 'dog-dental',
     name: 'PETPOP Dog Dental Powder',
-    category: 'Dogs',
-    size: '5.29 oz (150g)',
-    flavor: 'Natural Spearmint & Kelp',
-    price: '$24.99',
-    numericPrice: 24.99,
-    rating: 4.8,
-    reviewsCount: 245,
-    image: 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=800',
-    description: 'All-natural daily oral care supplement for dogs formulated with kelp and spearmint to fight tartar, manage plaque, and maintain fresh breath effortless.',
+    subtitle: 'Daily Oral Care & Breath Freshener Supplement',
+    description: 'Dog Dental Powder for Teeth Cleaning & Breath Freshener, All-Natural Dental Powder for Dogs, Easy Tartar Remover & Plaque Support, Daily Oral Care Supplement.',
+    shortDesc: 'Make oral care part of your dog\'s daily routine with an easy-to-use dental powder designed to support tartar, plaque and fresher breath.',
+    price: '$27.99',
+    rawPrice: 27.99,
+    size: '4.23 oz (120g)',
+    flavor: 'Natural Mint & Kelp',
+    suitableFor: 'Dogs',
+    rating: '4.8',
+    reviewCount: '94',
+    image: dentalImg,
+    badge: 'Daily Essential',
     highlights: [
       'Daily Oral Care',
       'Dental Support',
@@ -60,97 +67,12 @@ export const PRODUCTS = [
       'Easy Powder Format'
     ],
     features: [
-      'Promotes cleaner teeth without the stress of brushing',
-      'Supports tartar and plaque management in daily meals',
-      'Maintains fresh breath for closer daily cuddles',
-      'Convenient daily powder scoop fits right over kibble or wet food'
+      'Helps reduce tartar build-up and plaque accumulation',
+      'Freshens breath naturally with every daily meal',
+      'No toothbrushing struggle required',
+      '100% natural powder format for simple daily routine'
     ],
-    usageDirections: 'Please follow the serving instructions provided on the product packaging.',
-    badge: 'Popular Choice'
-  },
-  {
-    id: 'hip-joint-mobility',
-    name: 'PETPOP Hip & Joint Mobility Powder',
-    category: 'Dogs & Cats',
-    size: '6.00 oz (170g)',
-    flavor: 'Savory Beef Flavor',
-    price: '$29.99',
-    numericPrice: 29.99,
-    rating: 4.9,
-    reviewsCount: 189,
-    image: 'https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?auto=format&fit=crop&q=80&w=800',
-    description: 'Glucosamine, Chondroitin, and MSM joint complex powder to support flexibility, cartilage health, and smooth mobility in active & aging pets.',
-    highlights: [
-      'Glucosamine & MSM',
-      'Chondroitin Complex',
-      'Joint & Cartilage Support',
-      'Savory Beef Flavor',
-      'Smooth Mobility'
-    ],
-    features: [
-      'Supports healthy cartilage and joint lubrication',
-      'Eases stiffness in aging or highly active dogs & cats',
-      'Reinforces hip flexibility for active daily playtime',
-      'Palatable beef powder easily mixes into morning food'
-    ],
-    usageDirections: 'Please follow the serving instructions provided on the product packaging.',
-    badge: 'High Strength'
-  },
-  {
-    id: 'probiotic-gut-health',
-    name: 'PETPOP Probiotic & Gut Health Powder',
-    category: 'Dogs & Cats',
-    size: '5.50 oz (156g)',
-    flavor: 'Mild Turkey Flavor',
-    price: '$26.99',
-    numericPrice: 26.99,
-    rating: 4.8,
-    reviewsCount: 212,
-    image: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=800',
-    description: 'Advanced 5-Strain Probiotic blend with Prebiotic Fiber & Digestive Enzymes to promote healthy digestion, immune defense, and gut microflora balance.',
-    highlights: [
-      '5 Billion CFUs',
-      'Prebiotics & Enzymes',
-      'Stomach Comfort',
-      'Immune Defense',
-      'Dogs & Cats'
-    ],
-    features: [
-      'Encourages optimal gut flora balance and stool quality',
-      'Helps alleviate occasional gas and sensitive stomach',
-      'Supports strong natural immune system response',
-      'Gentle daily turkey powder formula for sensitive pets'
-    ],
-    usageDirections: 'Please follow the serving instructions provided on the product packaging.',
-    badge: 'Vet Formulated'
-  },
-  {
-    id: 'calming-anti-anxiety',
-    name: 'PETPOP Calming & Relaxation Powder',
-    category: 'Dogs & Cats',
-    size: '5.00 oz (140g)',
-    flavor: 'Peanut Butter Flavor',
-    price: '$27.99',
-    numericPrice: 27.99,
-    rating: 4.9,
-    reviewsCount: 164,
-    image: 'https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800',
-    description: 'L-Theanine, Chamomile, Organic Hemp Seed, and Ashwagandha powder to ease stress, fireworks reactivity, separation discomfort, and travel anxiety.',
-    highlights: [
-      'L-Theanine & Chamomile',
-      'Hemp Seed & Ashwagandha',
-      'Stress Relief',
-      'Peanut Butter Flavor',
-      'Non-Drowsy'
-    ],
-    features: [
-      'Promotes calm behavior during thunderstorms, fireworks & travel',
-      'Eases nervous energy without causing lethargy or drowsiness',
-      'Supports balanced mood and restfulness in routine changes',
-      'Irresistible peanut butter flavor pets love'
-    ],
-    usageDirections: 'Please follow the serving instructions provided on the product packaging.',
-    badge: 'Calming Support'
+    usageNote: 'Please follow the serving instructions provided on the product packaging.'
   }
 ];
 
