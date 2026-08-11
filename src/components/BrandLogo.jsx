@@ -7,7 +7,7 @@ export default function BrandLogo({ size = 'md', className = '' }) {
   return (
     <div className={`inline-flex items-center gap-2.5 font-bold tracking-tight select-none cursor-pointer ${className}`}>
       {/* Dog Paw / Mascot Badge */}
-      <img src="logo.jpeg" className="w-56 h-28 md:w-96" alt="logo" />
+      <img src="logo.jpeg" className="w-56 h-16 md:w-40" alt="logo" />
     </div>
   );
 }

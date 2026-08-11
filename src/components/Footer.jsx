@@ -22,7 +22,8 @@ export default function Footer({ onNavigate }) {
           {/* Column 1: Logo & About */}
           <div className="lg:col-span-2">
             <div onClick={() => handleNav('hero')} className="cursor-pointer inline-block mb-4">
-              <BrandLogo className="brightness-125" />
+                    <img src="logo.jpeg" className="w-56 h-28 " alt="logo" />
+
             </div>
             <p className="text-base text-gray-400 font-medium max-w-sm mb-6 leading-relaxed">
               Simple everyday wellness for happier pets. Quality powder supplements designed for easy daily routines.
