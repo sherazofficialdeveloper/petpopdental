@@ -1,0 +1,6 @@
+{
+  "name": "PETPOP Pet Wellness",
+  "description": "Everyday Wellness for Happier Pets - Professional E-Commerce Experience",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
